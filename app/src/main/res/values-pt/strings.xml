@@ -1,0 +1,61 @@
+<!--
+  ~ ApliKTest11
+  ~ Copyright (C) 2021 Miguel Molina
+  ~
+  ~ This program is free software: you can redistribute it and/or modify
+  ~ it under the terms of the GNU General Public License as published by
+  ~ the Free Software Foundation, either version 3 of the License, or
+  ~ (at your option) any later version.
+  ~
+  ~ This program is distributed in the hope that it will be useful,
+  ~ but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  ~ GNU General Public License for more details.
+  ~
+  ~ You should have received a copy of the GNU General Public License
+  ~ along with this program.  If not, see <https://www.gnu.org/licenses/>.
+  -->
+
+<resources>
+    <string name="app_name">ApliKTest11</string>
+    <string name="textShortDesc">Aplicativo com Kit de perguntas e Teste de conhecimento para a preparação do Prueba Saber</string>
+    <string name="textUsername">Nome do usuário</string>
+    <string name="textHintUsername">Seu usuário</string>
+    <string name="textPassword">Senha</string>
+    <string name="textHintPassword">Seu senha</string>
+    <string name="btnTextInicioSesion">ENTRAR</string>
+    <string name="textHintNombreOculto">Nome</string>
+    <string name="textHintApellidoOculto">Apelido</string>
+    <string name="textHintCorreoOculto">Correio eletrônico</string>
+    <string name="btnTextCrearUsuario">INSCREVER-SE</string>
+    <string name="textInicioSesion_DialogoTitle">Crie sua sessão</string>
+    <string name="textInicioSesion_DialogoMessage">¿Você quer registrar?</string>
+    <string name="textInicioSesion_OpcPositiva">Sim</string>
+    <string name="textInicioSesion_OpcNegativa">Não</string>
+    <string name="textCrearUsuario_Adicion">Usuário %1$s adicionado</string>
+    <string name="textCrearUsuario_ClaveDebil">A senha é fraca</string>
+    <string name="textCrearUsuario_Existe">O usuário %1$s já está registrado</string>
+    <string name="textValidarClave_PwdIncorrecto">A senha deve ter pelo menos 8 dígitos, uma letra maiúscula e um caractere especial</string>
+    <string name="textBienvenida">Receber</string>
+    <string name="textNombreUsuario">Alun@</string>
+    <string name="textMostrarBienvenida">Receber %1$s</string>
+    <string name="textBienvenidaIntro">Prepare suas competências acadêmicas</string>
+    <string name="textBienvenidaDescp">Projetar, resolver e verificar vários testes de conhecimento</string>
+    <string name="textInicioDescp">Elige uma opção com um toque na barra do menu</string>
+    <string name="textOpcionesFragment_CrearPregunta">Adicionar pergunta</string>
+    <string name="textOpcionesFragment_RealizarTest">Fazer Teste</string>
+    <string name="textOpcionesFragment_VerificarTest">Teste de verificação</string>
+    <string name="textBienvenidaNav_Logout">Cerrando sessão</string>
+    <string name="textBienvenidaNav_Licencia" formatted="false">
+    Copyright \u00A9 2021 Miguel Molina\n\n
+    Veja a General Public License GNU\n
+    versão 3 para mais detalhes. Assistir <a href="https://www.gnu.org/licenses/gpl.txt">GNU GPLv3</a>.
+    </string>
+    <string name="textBienvenidanav_AcercaDe" formatted="false">
+    Versão 1.0.0 (alpha)\n
+    Data de compilação %1$s
+    </string>
+    <string name="textMenuNav_Licencia">Licença</string>
+    <string name="textMenuNav_AcercaDe">Cerca de</string>
+    <string name="textMenuNav_Logout">Fechar Sessão</string>
+</resources>

@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ ApliKTest11
+  ~ Copyright (C) 2021 Miguel Molina
+  ~
+  ~ This program is free software: you can redistribute it and/or modify
+  ~ it under the terms of the GNU General Public License as published by
+  ~ the Free Software Foundation, either version 3 of the License, or
+  ~ (at your option) any later version.
+  ~
+  ~ This program is distributed in the hope that it will be useful,
+  ~ but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  ~ GNU General Public License for more details.
+  ~
+  ~ You should have received a copy of the GNU General Public License
+  ~ along with this program.  If not, see <https://www.gnu.org/licenses/>.
+  -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context=".MainActivity">
+    <!-- Bloque izquierdo -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_margin="10dp">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+            <!-- Logotipo -->
+            <ImageView
+                android:id="@+id/imageLogo"
+                android:layout_width="350dp"
+                android:layout_height="100dp"
+                android:src="@drawable/logo"/>
+            <!-- Inicio de sesion -->
+            <TextView
+                android:id="@+id/textViewUsername"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/acme_regular"
+                android:text="@string/textUsername"
+                android:textColor="#041150"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+            <EditText
+                android:id="@+id/_EditarUsername"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/acme_regular"
+                android:hint="@string/textHintUsername"/>
+            <TextView
+                android:id="@+id/textViewPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/acme_regular"
+                android:text="@string/textPassword"
+                android:textColor="#041150"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <EditText
+                    android:id="@+id/_EditarPassword"
+                    android:layout_width="wrap_content"
+                    android:minWidth="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/acme_regular"
+                    android:hint="@string/textHintPassword"
+                    android:inputType="textPassword"/>
+                <ImageView
+                    android:id="@+id/_EditarImgOcultarPassword"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/ic_visibility"
+                    android:onClick="MostrarOcultarPwd"/>
+            </LinearLayout>
+            <Button
+                android:id="@+id/btnInicioSesion"
+                app:backgroundTint="@null"
+                android:background="@drawable/btn_login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/acme_regular"
+                android:text="@string/btnTextInicioSesion"
+                android:textColor="#ffffff"
+                android:textSize="20sp"
+                android:onClick="InicioSesion"/>
+        </LinearLayout>
+    </LinearLayout>
+    <!-- Bloque derecho -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_margin="10dp">
+        <TextView
+            android:id="@+id/textViewShortDesc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/acme_regular"
+            android:text="@string/textShortDesc"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textAlignment="center"/>
+        <!-- Creacion de usuario -->
+        <EditText
+            android:id="@+id/_EditarNombreOculto"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/acme_regular"
+            android:hint="@string/textHintNombreOculto"/>
+        <EditText
+            android:id="@+id/_EditarApellidoOculto"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/acme_regular"
+            android:hint="@string/textHintApellidoOculto"/>
+        <EditText
+            android:id="@+id/_EditarCorreoOculto"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/acme_regular"
+            android:hint="@string/textHintCorreoOculto"/>
+        <Button
+            android:id="@+id/btnCrearUsuario"
+            android:visibility="gone"
+            app:backgroundTint="@null"
+            android:background="@drawable/btn_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/acme_regular"
+            android:text="@string/btnTextCrearUsuario"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:onClick="CrearUsuario"/>
+    </LinearLayout>
+</LinearLayout>
