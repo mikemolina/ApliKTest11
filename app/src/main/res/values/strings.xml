@@ -49,11 +49,12 @@
     <string name="textBienvenidaNav_Licencia" formatted="false">
     Copyright \u00A9 2021 Miguel Molina\n\n
     Consult the GNU General Public License\n
-    version 3 for more details. See <a href="https://www.gnu.org/licenses/gpl.txt">GNU GPLv3</a>.
+    version 3 for more details.\n
+    See <a href="https://www.gnu.org/licenses/gpl.txt">GNU GPLv3</a>.
     </string>
     <string name="textBienvenidanav_AcercaDe" formatted="false">
-    Version 1.0.0 (alpha)\n
-    Compilation date %1$s
+    Version %1$s\n
+    Compilation date %2$s
     </string>
     <string name="textMenuNav_Licencia">License</string>
     <string name="textMenuNav_AcercaDe">About</string>

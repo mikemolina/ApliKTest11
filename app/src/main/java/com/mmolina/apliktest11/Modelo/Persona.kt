@@ -19,10 +19,10 @@
 package com.mmolina.apliktest11.Modelo
 
 // Clase Persona
-data class Persona(val Usuario:String,
-                   val Clave:String,
-                   val Nombre:String,
-                   val Apellido:String,
-                   val Correo:String) {
+data class Persona(val nombre:String,
+                   val apellido:String,
+                   val usuario:String,
+                   val clave:String,
+                   val correo:String) {
     /* ... */
 }

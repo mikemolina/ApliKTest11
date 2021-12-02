@@ -18,27 +18,25 @@
 
 package com.mmolina.apliktest11
 
+import android.annotation.SuppressLint
 import android.content.Intent
-import android.content.res.Resources
 import android.graphics.Bitmap
 import android.graphics.Canvas
 import android.graphics.drawable.BitmapDrawable
 import android.graphics.drawable.Drawable
 import android.os.Build
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.text.SpannableStringBuilder
 import android.view.Menu
 import android.view.MenuItem
 import android.widget.Toast
+import androidx.appcompat.app.AlertDialog
+import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.view.menu.MenuBuilder
 import androidx.core.content.ContextCompat
 import androidx.core.graphics.drawable.RoundedBitmapDrawableFactory
 import kotlinx.android.synthetic.main.activity_bienvenida.*
-import android.R.menu
-import android.annotation.SuppressLint
-import androidx.appcompat.app.AlertDialog
-import androidx.appcompat.view.menu.MenuBuilder
 import java.text.SimpleDateFormat
-import java.util.*
 
 class Bienvenida : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -117,21 +115,23 @@ class Bienvenida : AppCompatActivity() {
             true
         }
         R.id.nav_Licencia -> {
-            var trDialogoMessage:String = getResources().getString(R.string.textBienvenidaNav_Licencia)
+            //var trDialogoMessage:String = getResources().getString(R.string.textBienvenidaNav_Licencia)
+            var trDialogoMessageStyle:SpannableStringBuilder = SpannableStringBuilder(getString(R.string.textBienvenidaNav_Licencia))
             val Dialogo = AlertDialog.Builder(this)
                 .setTitle(R.string.app_name)
-                .setMessage(trDialogoMessage)
+                .setMessage(trDialogoMessageStyle)
                 .setPositiveButton("OK", null)
             Dialogo.create()
             Dialogo.show()
             true
         }
         R.id.nav_AcercaDe -> {
-            var BuildDate:String = SimpleDateFormat("yyyy/MM/dd hh:mm:ss").format(Date())
-            var trDialogoMessage:String = getResources().getString(R.string.textBienvenidanav_AcercaDe, BuildDate)
+            var BuildDate:String = SimpleDateFormat("yyyy/MM/dd hh:mm:ss").format(BuildConfig.BUILT_TIME)
+            //var trDialogoMessage:String = getResources().getString(R.string.textBienvenidanav_AcercaDe, BuildConfig.VERSION_NAME, BuildDate)
+            var trDialogoMessageStyle:SpannableStringBuilder = SpannableStringBuilder(getString(R.string.textBienvenidanav_AcercaDe, BuildConfig.VERSION_NAME, BuildDate))
             val Dialogo = AlertDialog.Builder(this)
                 .setTitle(R.string.app_name)
-                .setMessage(trDialogoMessage)
+                .setMessage(trDialogoMessageStyle)
                 .setPositiveButton("OK", null)
             Dialogo.create()
             Dialogo.show()

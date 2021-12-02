@@ -20,7 +20,6 @@ package com.mmolina.apliktest11
 
 import android.content.DialogInterface
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.text.method.HideReturnsTransformationMethod
 import android.text.method.PasswordTransformationMethod
@@ -29,6 +28,7 @@ import android.widget.EditText
 import android.widget.ImageView
 import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
+import androidx.appcompat.app.AppCompatActivity
 import com.mmolina.apliktest11.Modelo.Persona
 import kotlinx.android.synthetic.main.activity_main.*
 import java.util.regex.Matcher
@@ -43,8 +43,8 @@ class MainActivity : AppCompatActivity() {
     private lateinit var editarCorreoOculto:EditText
     // Lista de Usuarios
     val LstPersonas:MutableList<Persona> = mutableListOf(
-        Persona("ymmolina", "1234", "Miguel", "Molina", "ymmolina@gmail.com"),
-        Persona("cuancho", "qwer", "Juan", "Acosta", "cuancho3245@gmail.com")
+        Persona("Miguel", "Molina","ymmolina", "1234", "ymmolina@gmail.com"),
+        Persona("Juan", "Acosta", "cuancho", "qwer", "cuancho3245@gmail.com")
     )
     // Main
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -84,8 +84,8 @@ class MainActivity : AppCompatActivity() {
         var trDialogoMessage:String = getResources().getString(R.string.textInicioSesion_DialogoMessage)
         var trDialogoOpcPositiva:String = getResources().getString(R.string.textInicioSesion_OpcPositiva)
         var trDialogoOpcNegativa:String = getResources().getString(R.string.textInicioSesion_OpcNegativa)
-        val positivoBtn = { dialog:DialogInterface, which:Int->ActivarMSJ()}
-        val negativoBtn = { _:DialogInterface, _:Int->}
+        val positivoBtn = { dialog:DialogInterface, which:Int->ActivarMSJ() }
+        val negativoBtn = { _:DialogInterface, _:Int-> }
         val Dialogo = AlertDialog.Builder(this)
             .setTitle(trDialogoTitle)
             .setMessage(trDialogoMessage)
@@ -126,7 +126,7 @@ class MainActivity : AppCompatActivity() {
     fun ValidacionUsuario(loc_editarUsername:String, loc_editarPassword:String):Boolean {
         var rta:Boolean = false
         for(item in LstPersonas) {
-            if( (item.Usuario == loc_editarUsername) && (item.Clave == loc_editarPassword) ) {
+            if( (item.usuario == loc_editarUsername) && (item.clave == loc_editarPassword) ) {
                 rta = true
             }
         }
@@ -146,7 +146,7 @@ class MainActivity : AppCompatActivity() {
         if( !rtaUser ) {
             var rtaPwd = ValidarClaveMet1(loc_editarPassword)
             if( rtaPwd == true ) {
-                LstPersonas.add(Persona(loc_editarUsername, loc_editarPassword, loc_editarNombreOculto, loc_editarApellidoOculto, loc_editarCorreoOculto))
+                LstPersonas.add(Persona(loc_editarNombreOculto, loc_editarApellidoOculto, loc_editarUsername, loc_editarPassword, loc_editarCorreoOculto))
                 trToastMSJ = this.getResources().getString(R.string.textCrearUsuario_Adicion, loc_editarUsername)
                 Toast.makeText(this, trToastMSJ, Toast.LENGTH_SHORT).show()
             } else {
@@ -162,7 +162,7 @@ class MainActivity : AppCompatActivity() {
     fun ExisteUsuario(loc_editarUsername:String):Boolean {
         var rta:Boolean = false
         for( item in LstPersonas ) {
-            if( item.Usuario == loc_editarUsername ) {
+            if( item.usuario == loc_editarUsername ) {
                 rta = true
             }
         }

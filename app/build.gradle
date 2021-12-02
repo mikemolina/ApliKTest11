@@ -29,9 +29,10 @@ android {
         applicationId "com.mmolina.apliktest11"
         minSdk 26
         targetSdk 31
-        versionCode 1
-        versionName "1.0"
+        versionCode 100
+        versionName "1.0.0 (alpha)"
 
+        buildConfigField("long", "BUILT_TIME", System.currentTimeMillis() + "L")
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 

@@ -48,12 +48,13 @@
     <string name="textBienvenidaNav_Logout">Cerrando sesión</string>
     <string name="textBienvenidaNav_Licencia" formatted="false">
     Copyright \u00A9 2021 Miguel Molina\n\n
-    Consulte la Licencia Pública General de GNU\n
-    versión 3 para más detalles. Ver <a href="https://www.gnu.org/licenses/gpl.txt">GNU GPLv3</a>.
+    Consulte la Licencia Pública General\n
+    de GNU versión 3 para más detalles.\n
+    Ver <a href="https://www.gnu.org/licenses/gpl.txt">GNU GPLv3</a>.
     </string>
     <string name="textBienvenidanav_AcercaDe" formatted="false">
-    Versión 1.0.0 (alpha)\n
-    Fecha compilación %1$s
+    Versión %1$s\n
+    Fecha compilación %2$s
     </string>
     <string name="textMenuNav_Licencia">Licencia</string>
     <string name="textMenuNav_AcercaDe">Acerca de</string>

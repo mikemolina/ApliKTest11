@@ -36,9 +36,9 @@
     <string name="textCrearUsuario_ClaveDebil">A senha é fraca</string>
     <string name="textCrearUsuario_Existe">O usuário %1$s já está registrado</string>
     <string name="textValidarClave_PwdIncorrecto">A senha deve ter pelo menos 8 dígitos, uma letra maiúscula e um caractere especial</string>
-    <string name="textBienvenida">Receber</string>
+    <string name="textBienvenida">Bem-vind@</string>
     <string name="textNombreUsuario">Alun@</string>
-    <string name="textMostrarBienvenida">Receber %1$s</string>
+    <string name="textMostrarBienvenida">Bem-vindo %1$s</string>
     <string name="textBienvenidaIntro">Prepare suas competências acadêmicas</string>
     <string name="textBienvenidaDescp">Projetar, resolver e verificar vários testes de conhecimento</string>
     <string name="textInicioDescp">Elige uma opção com um toque na barra do menu</string>
@@ -49,11 +49,12 @@
     <string name="textBienvenidaNav_Licencia" formatted="false">
     Copyright \u00A9 2021 Miguel Molina\n\n
     Veja a General Public License GNU\n
-    versão 3 para mais detalhes. Assistir <a href="https://www.gnu.org/licenses/gpl.txt">GNU GPLv3</a>.
+    versão 3 para mais detalhes.\n
+    Assistir <a href="https://www.gnu.org/licenses/gpl.txt">GNU GPLv3</a>.
     </string>
     <string name="textBienvenidanav_AcercaDe" formatted="false">
-    Versão 1.0.0 (alpha)\n
-    Data de compilação %1$s
+    Versão %1$s\n
+    Data de compilação %2$s
     </string>
     <string name="textMenuNav_Licencia">Licença</string>
     <string name="textMenuNav_AcercaDe">Cerca de</string>

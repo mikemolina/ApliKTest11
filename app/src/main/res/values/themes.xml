@@ -30,5 +30,10 @@
         <!-- Status bar color. -->
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
+        <item name="actionOverflowButtonStyle">@style/CustomOverflowButtonStyle</item>
+    </style>
+    <!-- Modificacion de color del icono overflow del menu -->
+    <style name="CustomOverflowButtonStyle" parent="Widget.AppCompat.ActionButton.Overflow">
+        <item name="android:tint">@color/white</item>
     </style>
 </resources>
