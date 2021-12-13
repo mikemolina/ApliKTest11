@@ -16,24 +16,21 @@
  * along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */
 
-package com.mmolina.apliktest11
+package com.mmolina.apliktest11.Modelo
 
-import android.os.Bundle
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
-import androidx.fragment.app.Fragment
+import androidx.room.Entity
+import androidx.room.PrimaryKey
+import java.io.Serializable
 
-class PreguntasFragment : Fragment() {
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-    }
-    override fun onCreateView(
-        inflater: LayoutInflater,
-        container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View? {
-        val fragmento = inflater.inflate(R.layout.fragment_preguntas, container, false)
-        return fragmento
-    }
-}
+/* Clase PesronaDB */
+@Entity(tableName = "tblPersona")
+class PersonaDB (
+    val nombre:String,
+    val apellido:String,
+    val usuario:String,
+    val claveSalt:ByteArray?,
+    val claveSHA256:String,
+    val correo:String,
+    @PrimaryKey( autoGenerate = true )
+    var idPersona:Int = 0
+) : Serializable

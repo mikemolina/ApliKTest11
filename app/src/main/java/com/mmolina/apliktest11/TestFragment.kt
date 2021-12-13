@@ -25,14 +25,11 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 
 class TestFragment : Fragment() {
-    override fun onCreate(savedInstanceState: Bundle?) {
+    override fun onCreate(savedInstanceState:Bundle?) {
         super.onCreate(savedInstanceState)
     }
-    override fun onCreateView(
-        inflater: LayoutInflater,
-        container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View? {
+
+    override fun onCreateView(inflater:LayoutInflater, container:ViewGroup?, savedInstanceState:Bundle?) : View? {
         val fragmento = inflater.inflate(R.layout.fragment_test, container, false)
         return fragmento
     }

@@ -7,7 +7,7 @@ A mobile application developed for *Android* devices, aimed at 11th grade studen
 ## Development
 
 ### Dependencies
-* Application developed with **IDE Android Studio (Arctic Fox)** based on Gradle.
+* Application developed with **IDE Android Studio (Arctic Fox)** based on Kotlin+Gradle.
 * API level 26 (Android Oreo).
 
 ## License

@@ -1,22 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--
-  ~ ApliKTest11
-  ~ Copyright (C) 2021 Miguel Molina
-  ~
-  ~ This program is free software: you can redistribute it and/or modify
-  ~ it under the terms of the GNU General Public License as published by
-  ~ the Free Software Foundation, either version 3 of the License, or
-  ~ (at your option) any later version.
-  ~
-  ~ This program is distributed in the hope that it will be useful,
-  ~ but WITHOUT ANY WARRANTY; without even the implied warranty of
-  ~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-  ~ GNU General Public License for more details.
-  ~
-  ~ You should have received a copy of the GNU General Public License
-  ~ along with this program.  If not, see <https://www.gnu.org/licenses/>.
-  -->
-
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.mmolina.apliktest11">
 
@@ -27,6 +9,15 @@
         android:roundIcon="@mipmap/icon_ias_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.ApliKTest11">
+        <activity
+            android:name=".PreguntaMain"
+            android:exported="true" />
+        <activity
+            android:name=".NuevaPregunta"
+            android:exported="true" />
+        <activity
+            android:name=".DetallePregunta"
+            android:exported="true" />
         <activity
             android:name=".Bienvenida"
             android:exported="true" />

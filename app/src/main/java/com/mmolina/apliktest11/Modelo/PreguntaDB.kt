@@ -16,21 +16,24 @@
  * along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */
 
-// Top-level build file where you can add configuration options common to all sub-projects/modules.
-buildscript {
-    repositories {
-        google()
-        mavenCentral()
-    }
-    dependencies {
-        classpath "com.android.tools.build:gradle:7.0.4"
-        classpath 'org.jetbrains.kotlin:kotlin-gradle-plugin:1.6.0'
+package com.mmolina.apliktest11.Modelo
 
-        // NOTE: Do not place your application dependencies here; they belong
-        // in the individual module build.gradle files
-    }
-}
+import androidx.room.Entity
+import androidx.room.PrimaryKey
+import java.io.Serializable
 
-task clean(type: Delete) {
-    delete rootProject.buildDir
-}
+/* Clase PreguntaDB */
+@Entity(tableName = "tblPregunta")
+class PreguntaDB (
+    val asignatura:String,
+    val enunciado:String,
+    val opcItemA:String,
+    val opcItemB:String,
+    val opcItemC:String,
+    val opcItemD:String,
+    val respuesta:String,
+    val autor:String,
+    val imgAsignatura:Int,
+    @PrimaryKey( autoGenerate = true )
+    var idPregunta:Int = 0
+) : Serializable

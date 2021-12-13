@@ -24,6 +24,11 @@
         android:title="Opciones"
         app:showAsAction="always"/>
     <item
+        android:id="@+id/nav_InfoSesion"
+        android:icon="@drawable/ic_user_info"
+        android:title="@string/textMenuNav_InfoSesion"
+        app:showAsAction="never"/>
+    <item
         android:id="@+id/nav_Licencia"
         android:icon="@drawable/outline_task_24"
         android:title="@string/textMenuNav_Licencia"

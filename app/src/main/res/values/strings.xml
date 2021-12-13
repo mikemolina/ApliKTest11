@@ -42,7 +42,7 @@
     <string name="textBienvenidaIntro">Prepare yours academic competences</string>
     <string name="textBienvenidaDescp">Design, solve and verify various knowledge tests</string>
     <string name="textInicioDescp">Choose an option with a touch in the menu bar</string>
-    <string name="textOpcionesFragment_CrearPregunta">Add question</string>
+    <string name="textOpcionesFragment_CrearPregunta">Question Bank</string>
     <string name="textOpcionesFragment_RealizarTest">Make Test</string>
     <string name="textOpcionesFragment_VerificarTest">Check Test</string>
     <string name="textBienvenidaNav_Logout">Closing session</string>
@@ -59,4 +59,46 @@
     <string name="textMenuNav_Licencia">License</string>
     <string name="textMenuNav_AcercaDe">About</string>
     <string name="textMenuNav_Logout">Logout</string>
+    <string name="strFragmentPreguntas_Autor">Author</string>
+    <string name="textInicioSesion_CampoVacio">Fields cannot be empty</string>
+    <string name="textCrearUsuario_UsuarioDebil">Username too long and/or with white spaces</string>
+    <string name="textCrearUsuario_CorreoIncorrecto">Invalid email address</string>
+    <string name="textMenuNav_InfoSesion">Session info</string>
+    <string name="textBienvenidaNav_InfoSesion" formatted="false">
+    Name: %1$s %2$s\n
+    Email: %3$s
+    </string>
+    <string name="textBienvenidaNav_InfoSesionTitle">Session %1$s</string>
+    <!-- PreguntasDB -->
+    <string name="txtNuevaPreguntaAsignatura">Topic of question</string>
+    <string name="txtradioAsigCNAT">Science</string>
+    <string name="txtradioAsigLENG">Language</string>
+    <string name="txtradioAsigMAT">Mathematics</string>
+    <string name="txtradioAsigSOC">Socials</string>
+    <string name="txtNuevaPreguntaEnunciado">Statement of the question</string>
+    <string name="txteditNuevaPreguntaEnunciado">Write question</string>
+    <string name="txtNuevaPreguntaOpciones">Question Options</string>
+    <string name="txteditNuevaPreguntaOpcionA">Write option A</string>
+    <string name="txteditNuevaPreguntaOpcionB">Write option B</string>
+    <string name="txteditNuevaPreguntaOpcionC">Write option C</string>
+    <string name="txteditNuevaPreguntaOpcionD">Write option D</string>
+    <string name="txtNuevaPreguntaRespuesta">Choose the correct question option</string>
+    <string name="btntxtNuevaPreguntaAgregar">Save question</string>
+    <string name="txtbtnNuevaPreguntaAdicionada">The question was saved</string>
+    <string name="btnFABECrearPregunta">Create question</string>
+    <string name="txtDetallePreguntaAsignatura">Topic of question</string>
+    <string name="txtDetallePreguntaEnunciado">Statement of the question</string>
+    <string name="txtDetallePreguntaOpciones">Options of the question</string>
+    <string name="txtDetallePreguntaTituloOpciones">Question options</string>
+    <string name="txtDetallePreguntaOpcItemA">Option A</string>
+    <string name="txtDetallePreguntaOpcItemB">Option B</string>
+    <string name="txtDetallePreguntaOpcItemC">Option C</string>
+    <string name="txtDetallePreguntaOpcItemD">Option D</string>
+    <string name="txtDetallePreguntaAutor">Author</string>
+    <string name="txtbtnNuevaPreguntaActualizada">The question was updated</string>
+    <string name="txtDetallePreguntaDiagTit">Question delete</string>
+    <string name="txtDetallePreguntaDiagMsj">Confirm delete question</string>
+    <string name="txtDetallePreguntaDiagPos">DELETE</string>
+    <string name="txtDetallePreguntaDiagNeg">CANCEL</string>
+    <string name="txtDetallePreguntaEliminada">The question was eliminated</string>
 </resources>

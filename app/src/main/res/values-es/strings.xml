@@ -42,7 +42,7 @@
     <string name="textBienvenidaIntro">Prepara tus competencias académicas</string>
     <string name="textBienvenidaDescp">Diseña, resuelve y verifica variados test de conocimientos</string>
     <string name="textInicioDescp">Elige una opción con un toque en la barra del menú</string>
-    <string name="textOpcionesFragment_CrearPregunta">Agregar pregunta</string>
+    <string name="textOpcionesFragment_CrearPregunta">Banco de Preguntas</string>
     <string name="textOpcionesFragment_RealizarTest">Realizar Test</string>
     <string name="textOpcionesFragment_VerificarTest">Verificar Test</string>
     <string name="textBienvenidaNav_Logout">Cerrando sesión</string>
@@ -59,4 +59,46 @@
     <string name="textMenuNav_Licencia">Licencia</string>
     <string name="textMenuNav_AcercaDe">Acerca de</string>
     <string name="textMenuNav_Logout">Cerrar sesión</string>
+    <string name="strFragmentPreguntas_Autor">Autor</string>
+    <string name="textInicioSesion_CampoVacio">Campos no pueden ser vacíos</string>
+    <string name="textCrearUsuario_UsuarioDebil">Nombre de usuario demasiado largo y/o con espacios en blanco</string>
+    <string name="textCrearUsuario_CorreoIncorrecto">Dirección de correo electrónico inválida</string>
+    <string name="textMenuNav_InfoSesion">Info de la sesión</string>
+    <string name="textBienvenidaNav_InfoSesion" formatted="false">
+    Nombre: %1$s %2$s\n
+    Correo electrónico: %3$s
+    </string>
+    <string name="textBienvenidaNav_InfoSesionTitle">Sesión %1$s</string>
+    <!-- PreguntasDB -->
+    <string name="txtNuevaPreguntaAsignatura">Tema de la pregunta</string>
+    <string name="txtradioAsigCNAT">Ciencias</string>
+    <string name="txtradioAsigLENG">Lenguaje</string>
+    <string name="txtradioAsigMAT">Matemáticas</string>
+    <string name="txtradioAsigSOC">Sociales</string>
+    <string name="txtNuevaPreguntaEnunciado">Enunciado de la pregunta</string>
+    <string name="txteditNuevaPreguntaEnunciado">Escribir pregunta</string>
+    <string name="txtNuevaPreguntaOpciones">Opciones de la pregunta</string>
+    <string name="txteditNuevaPreguntaOpcionA">Escribir opción A</string>
+    <string name="txteditNuevaPreguntaOpcionB">Escribir opción B</string>
+    <string name="txteditNuevaPreguntaOpcionC">Escribir opción C</string>
+    <string name="txteditNuevaPreguntaOpcionD">Escribir opción D</string>
+    <string name="txtNuevaPreguntaRespuesta">Elegir la opción correcta de la pregunta</string>
+    <string name="btntxtNuevaPreguntaAgregar">Guardar pregunta</string>
+    <string name="txtbtnNuevaPreguntaAdicionada">La pregunta fue guardada</string>
+    <string name="btnFABECrearPregunta">Crear pregunta</string>
+    <string name="txtDetallePreguntaAsignatura">Tema de la pregunta</string>
+    <string name="txtDetallePreguntaEnunciado">Enunciado de la pregunta</string>
+    <string name="txtDetallePreguntaOpciones">Opciones de la pregunta</string>
+    <string name="txtDetallePreguntaTituloOpciones">Opciones de la pregunta</string>
+    <string name="txtDetallePreguntaOpcItemA">Opción A</string>
+    <string name="txtDetallePreguntaOpcItemB">Opción B</string>
+    <string name="txtDetallePreguntaOpcItemC">Opción C</string>
+    <string name="txtDetallePreguntaOpcItemD">Opción D</string>
+    <string name="txtDetallePreguntaAutor">Autor</string>
+    <string name="txtbtnNuevaPreguntaActualizada">La pregunta fue actualizada</string>
+    <string name="txtDetallePreguntaDiagTit">Eliminar pregunta</string>
+    <string name="txtDetallePreguntaDiagMsj">Confirmar eliminación de pregunta</string>
+    <string name="txtDetallePreguntaDiagPos">ELIMINAR</string>
+    <string name="txtDetallePreguntaDiagNeg">CANCELAR</string>
+    <string name="txtDetallePreguntaEliminada">La pregunta fue eliminada</string>
 </resources>

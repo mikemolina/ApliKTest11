@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ ApliKTest11
+  ~ Copyright (C) 2021 Miguel Molina
+  ~
+  ~ This program is free software: you can redistribute it and/or modify
+  ~ it under the terms of the GNU General Public License as published by
+  ~ the Free Software Foundation, either version 3 of the License, or
+  ~ (at your option) any later version.
+  ~
+  ~ This program is distributed in the hope that it will be useful,
+  ~ but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  ~ GNU General Public License for more details.
+  ~
+  ~ You should have received a copy of the GNU General Public License
+  ~ along with this program.  If not, see <https://www.gnu.org/licenses/>.
+  -->
+
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="256"
+    android:viewportHeight="256"
+    android:tint="@color/white">
+  <path
+      android:pathData="M166.5,-0.5C169.167,-0.5 171.833,-0.5 174.5,-0.5C175.688,0.364 176.855,1.364 178,2.5C181.414,8.997 185.081,15.33 189,21.5C190.369,26.437 189.203,30.604 185.5,34C136.336,62.081 87.337,90.414 38.5,119C31.469,123.826 24.636,123.66 18,118.5C14.919,112.669 11.585,107.002 8,101.5C7.333,98.5 7.333,95.5 8,92.5C23.336,82.663 39.003,73.33 55,64.5C51.312,56.749 47.478,48.915 43.5,41C43.903,38.113 45.236,35.779 47.5,34C64.833,24 82.167,14 99.5,4C102.964,3.183 106.298,3.517 109.5,5C113.67,11.99 118.003,18.823 122.5,25.5C137.467,17.169 152.133,8.502 166.5,-0.5ZM99.5,22.5C100.496,22.414 101.329,22.748 102,23.5C104.019,27.191 105.686,30.858 107,34.5C94.64,41.923 82.14,48.757 69.5,55C66.676,51.524 64.843,47.69 64,43.5C76.144,36.852 87.977,29.852 99.5,22.5Z"
+      android:strokeAlpha="0.957"
+      android:fillColor="@android:color/white"
+      android:fillAlpha="0.957"/>
+  <path
+      android:pathData="M220.5,-0.5C223.5,-0.5 226.5,-0.5 229.5,-0.5C232.393,2.938 233.227,6.938 232,11.5C226.167,17.333 220.333,23.167 214.5,29C204.469,30.971 200.636,27.137 203,17.5C209.036,11.631 214.87,5.631 220.5,-0.5Z"
+      android:strokeAlpha="0.903"
+      android:fillColor="@android:color/white"
+      android:fillAlpha="0.903"/>
+  <path
+      android:pathData="M220.5,44.5C228.507,44.334 236.507,44.5 244.5,45C248.5,49.667 248.5,54.333 244.5,59C236.5,59.667 228.5,59.667 220.5,59C215.402,54.226 215.402,49.393 220.5,44.5Z"
+      android:strokeAlpha="0.938"
+      android:fillColor="@android:color/white"
+      android:fillAlpha="0.938"/>
+  <path
+      android:pathData="M205.5,74.5C208.518,74.335 211.518,74.502 214.5,75C220.333,80.833 226.167,86.667 232,92.5C234.167,102.333 230.333,106.167 220.5,104C214.667,98.167 208.833,92.333 203,86.5C201.273,82.062 202.106,78.062 205.5,74.5Z"
+      android:strokeAlpha="0.903"
+      android:fillColor="@android:color/white"
+      android:fillAlpha="0.903"/>
+  <path
+      android:pathData="M115.5,89.5C143.502,89.333 171.502,89.5 199.5,90C200.333,90.833 201.167,91.667 202,92.5C199.625,131.919 196.125,171.252 191.5,210.5C181.833,210.5 172.167,210.5 162.5,210.5C164.202,188.646 166.202,166.813 168.5,145C169.199,137.361 165.865,134.361 158.5,136C156.951,137.214 155.785,138.714 155,140.5C152.502,163.81 150.336,187.143 148.5,210.5C141.167,210.5 133.833,210.5 126.5,210.5C126.667,186.498 126.5,162.498 126,138.5C122,134.5 118,134.5 114,138.5C113.667,139.833 113.333,141.167 113,142.5C112.5,165.164 112.333,187.831 112.5,210.5C105.5,210.5 98.5,210.5 91.5,210.5C89.73,187.469 87.564,164.469 85,141.5C83.542,135.941 80.042,134.108 74.5,136C72.005,138.219 71.005,141.052 71.5,144.5C73.765,166.482 75.765,188.482 77.5,210.5C67.405,211.126 57.572,210.459 48,208.5C45.332,183.484 42.998,158.484 41,133.5C65.979,118.933 90.812,104.266 115.5,89.5Z"
+      android:strokeAlpha="0.967"
+      android:fillColor="@android:color/white"
+      android:fillAlpha="0.967"/>
+  <path
+      android:pathData="M184.5,255.5C141.5,255.5 98.5,255.5 55.5,255.5C53.299,253.738 52.133,251.404 52,248.5C51.232,240.483 50.398,232.483 49.5,224.5C96.5,224.5 143.5,224.5 190.5,224.5C189.578,232.475 188.744,240.475 188,248.5C187.867,251.404 186.7,253.738 184.5,255.5Z"
+      android:strokeAlpha="0.973"
+      android:fillColor="@android:color/white"
+      android:fillAlpha="0.973"/>
+</vector>

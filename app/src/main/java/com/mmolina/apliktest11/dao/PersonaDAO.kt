@@ -16,12 +16,31 @@
  * along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */
 
-package com.mmolina.apliktest11.Modelo
+package com.mmolina.apliktest11.dao
 
-// Clase Persona
-data class Persona(val nombre:String,
-                   val apellido:String,
-                   val usuario:String,
-                   val clave:String,
-                   val correo:String) {
+import androidx.lifecycle.LiveData
+import androidx.room.*
+import com.mmolina.apliktest11.Modelo.PersonaDB
+
+@Dao
+interface PersonaDao {
+    // Obtener lista de personas
+    @Query("SELECT * FROM tblPersona")
+    fun getLstPersonaDB() : LiveData<List<PersonaDB>>
+
+    // Obtener una sola persona
+    @Query("SELECT * FROM tblPersona WHERE idPersona = :id")
+    fun getPersonaDB(id:Int) : LiveData<PersonaDB>
+
+    // Insertar persona
+    @Insert
+    fun insertPersonaDBAll(vararg vararg_persona:PersonaDB)
+
+    // Actualizar persona
+    @Update
+    fun updatePersonaDB(var_persona:PersonaDB)
+
+    // Eliminar persona
+    @Delete
+    fun deletePersonaDB(var_persona:PersonaDB)
 }

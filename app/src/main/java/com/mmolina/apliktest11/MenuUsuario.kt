@@ -18,17 +18,22 @@
 
 package com.mmolina.apliktest11
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 
 class MenuUsuario : AppCompatActivity() {
-    override fun onCreate(savedInstanceState: Bundle?) {
+    private lateinit var AutorStr:String
+
+    override fun onCreate(savedInstanceState:Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_menu_usuario)
+        AutorStr = intent.extras?.get("DATA_Autor").toString()
         if( savedInstanceState == null ) {
+            val bundle_MenuUsuario:Bundle = Bundle()
+            bundle_MenuUsuario.putString("DATA_Autor_to_opcfragm", AutorStr)
             supportFragmentManager.beginTransaction()
                 .setReorderingAllowed(true)
-                .add(R.id.ContenedorVistaFragments, OpcionesFragment::class.java, null, "OpcionesMenu")
+                .add(R.id.ContenedorVistaFragments, OpcionesFragment::class.java, bundle_MenuUsuario, "DATA_frag_Autor")
                 .commit()
         }
     }

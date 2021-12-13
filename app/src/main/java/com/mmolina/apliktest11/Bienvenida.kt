@@ -39,21 +39,35 @@ import kotlinx.android.synthetic.main.activity_bienvenida.*
 import java.text.SimpleDateFormat
 
 class Bienvenida : AppCompatActivity() {
-    override fun onCreate(savedInstanceState: Bundle?) {
+    private lateinit var InfoUsuarioStr:String
+    private lateinit var InfoNombreStr:String
+    private lateinit var InfoApellidoStr:String
+    private lateinit var InfoEmailStr:String
+
+    override fun onCreate(savedInstanceState:Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_bienvenida)
+        InfoSesion()
         MostrarBienvenida()
         RedondearImagenUsuario()
         setSupportActionBar(findViewById(R.id.MenuBarMain))
     }
+
+    // Funcion con informacion de la sesion
+    fun InfoSesion() {
+        InfoUsuarioStr = intent.extras?.get("DATA_Ususario").toString()
+        InfoNombreStr = intent.extras?.get("DATA_Nombre").toString()
+        InfoApellidoStr = intent.extras?.get("DATA_Apellido").toString()
+        InfoEmailStr = intent.extras?.get("DATA_Email").toString()
+    }
+
     // Funcion para presentar Bienvenida
     fun MostrarBienvenida() {
-        val saludoUsuario = intent.extras
-        val Usuario = saludoUsuario?.get("SALUDO")
-        var trToastMSJ:String = this.getResources().getString(R.string.textMostrarBienvenida, Usuario)
+        val trToastMSJ:String = this.getResources().getString(R.string.textMostrarBienvenida, InfoUsuarioStr)
         Toast.makeText(this, trToastMSJ, Toast.LENGTH_LONG).show()
-        textNombreUsuario.text = Usuario.toString()
+        textNombreUsuario.text = InfoUsuarioStr
     }
+
     // Funcion para redondear imagen usuario
     // Tomado de <https://stackoverflow.com/questions/22105775/imageview-in-circular-through-xml>
     fun RedondearImagenUsuario() {
@@ -74,6 +88,7 @@ class Bienvenida : AppCompatActivity() {
             imgUserFemale.outlineProvider = CircularShadowViewOutlineProvider()
         }
     }
+
     // Funcion para renderizar imagen Usuario
     companion object {
         @JvmStatic
@@ -97,26 +112,39 @@ class Bienvenida : AppCompatActivity() {
             return bitmap
         }
     }
+
     // Funcion para activar el menu con iconos
     @SuppressLint("RestrictedApi")
-    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+    override fun onCreateOptionsMenu(menu:Menu?) : Boolean {
         menuInflater.inflate(R.menu.activity_menu, menu)
         if (menu is MenuBuilder) {
             menu.setOptionalIconsVisible(true)
         }
         return super.onCreateOptionsMenu(menu)
     }
+
     // Funcion para seleccionar opcion del menu
-    override fun onOptionsItemSelected(item: MenuItem): Boolean = when(item.itemId) {
+    override fun onOptionsItemSelected(item:MenuItem) : Boolean = when(item.itemId) {
         R.id.nav_Opciones -> {
             Toast.makeText(this, "Continua a Menu Usuario", Toast.LENGTH_LONG).show()
             val intentMenuUsuario = Intent(this, MenuUsuario::class.java)
+            intentMenuUsuario.putExtra("DATA_Autor", InfoUsuarioStr)
             startActivity(intentMenuUsuario)
+            true
+        }
+        R.id.nav_InfoSesion -> {
+            val trDialogoMessageStyle:SpannableStringBuilder = SpannableStringBuilder(getString(R.string.textBienvenidaNav_InfoSesion, InfoNombreStr, InfoApellidoStr, InfoEmailStr))
+            val Dialogo = AlertDialog.Builder(this)
+                .setTitle(getString(R.string.textBienvenidaNav_InfoSesionTitle, InfoUsuarioStr))
+                .setMessage(trDialogoMessageStyle)
+                .setPositiveButton("OK", null)
+            Dialogo.create()
+            Dialogo.show()
             true
         }
         R.id.nav_Licencia -> {
             //var trDialogoMessage:String = getResources().getString(R.string.textBienvenidaNav_Licencia)
-            var trDialogoMessageStyle:SpannableStringBuilder = SpannableStringBuilder(getString(R.string.textBienvenidaNav_Licencia))
+            val trDialogoMessageStyle:SpannableStringBuilder = SpannableStringBuilder(getString(R.string.textBienvenidaNav_Licencia))
             val Dialogo = AlertDialog.Builder(this)
                 .setTitle(R.string.app_name)
                 .setMessage(trDialogoMessageStyle)
@@ -126,9 +154,9 @@ class Bienvenida : AppCompatActivity() {
             true
         }
         R.id.nav_AcercaDe -> {
-            var BuildDate:String = SimpleDateFormat("yyyy/MM/dd hh:mm:ss").format(BuildConfig.BUILT_TIME)
+            val BuildDate:String = SimpleDateFormat("yyyy/MM/dd hh:mm:ss").format(BuildConfig.BUILT_TIME)
             //var trDialogoMessage:String = getResources().getString(R.string.textBienvenidanav_AcercaDe, BuildConfig.VERSION_NAME, BuildDate)
-            var trDialogoMessageStyle:SpannableStringBuilder = SpannableStringBuilder(getString(R.string.textBienvenidanav_AcercaDe, BuildConfig.VERSION_NAME, BuildDate))
+            val trDialogoMessageStyle:SpannableStringBuilder = SpannableStringBuilder(getString(R.string.textBienvenidanav_AcercaDe, BuildConfig.VERSION_NAME, BuildDate))
             val Dialogo = AlertDialog.Builder(this)
                 .setTitle(R.string.app_name)
                 .setMessage(trDialogoMessageStyle)
@@ -138,7 +166,7 @@ class Bienvenida : AppCompatActivity() {
             true
         }
         R.id.nav_Logout -> {
-            var trToastMSJ:String = this.getResources().getString(R.string.textBienvenidaNav_Logout)
+            val trToastMSJ:String = this.getResources().getString(R.string.textBienvenidaNav_Logout)
             Toast.makeText(this, trToastMSJ, Toast.LENGTH_LONG).show()
             finish()
             true

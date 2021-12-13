@@ -17,13 +17,16 @@
   ~ along with this program.  If not, see <https://www.gnu.org/licenses/>.
   -->
 
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Vista Fragmento Preguntas"
-        android:textSize="25sp"
-        android:layout_gravity="center_vertical"/>
-</LinearLayout>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/menuItemEditar"
+        android:icon="@drawable/ic_baseline_edit_24"
+        android:title="Editar pregunta"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/menuItemBorrar"
+        android:icon="@drawable/ic_caneca_256"
+        android:title="Eliminar pregunta"
+        app:showAsAction="always"/>
+</menu>

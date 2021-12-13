@@ -18,6 +18,7 @@
 
 package com.mmolina.apliktest11
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -26,34 +27,44 @@ import android.widget.Button
 import androidx.fragment.app.Fragment
 
 class OpcionesFragment : Fragment() {
-    override fun onCreate(savedInstanceState: Bundle?) {
+    private lateinit var AutorStr:String
+    override fun onCreate(savedInstanceState:Bundle?) {
         super.onCreate(savedInstanceState)
+        AutorStr = requireArguments().getString("DATA_Autor_to_opcfragm").toString()
     }
+
     // Funcion para manejar fragmentos
-    override fun onCreateView(
-        inflater: LayoutInflater,
-        container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View? {
+    override fun onCreateView(inflater:LayoutInflater, container:ViewGroup?, savedInstanceState:Bundle?) : View? {
         val fragmento = inflater.inflate(R.layout.activity_opciones_fragment, container, false)
         val CrearPregunta:Button = fragmento.findViewById(R.id.btnOpcionesFragment_CrearPregunta)
         val RealizarTest:Button = fragmento.findViewById(R.id.btnOpcionesFragment_RealizarTest)
         val VerificarTest:Button = fragmento.findViewById(R.id.btnOpcionesFragment_VerificarTest)
+        //
         CrearPregunta.setOnClickListener({
+            val intentPreguntaMain = Intent(requireContext(), PreguntaMain::class.java)
+            intentPreguntaMain.putExtra("DATA_Autor_to_pregmain", AutorStr)
+            startActivity(intentPreguntaMain)
+            //val bundle_OpcionesFragment:Bundle = Bundle()
+            //bundle_OpcionesFragment.putString("DATA_Autor_to_pregfragm", AutorStr)
+            //->bundle_OpcionesFragment
+            /*
             activity?.getSupportFragmentManager()
                 ?.beginTransaction()
                 ?.setReorderingAllowed(true)
-                ?.replace(R.id.ContenedorVistaFragments, PreguntasFragment::class.java, null, "Preguntas")
+                ?.replace(R.id.ContenedorVistaFragments, PreguntaMain::class.java, null, "DATA_Autor_to_pregfragm")
                 ?.addToBackStack("")
                 ?.commit()
+            */
         })
         RealizarTest.setOnClickListener({
+            /*
             activity?.getSupportFragmentManager()
                 ?.beginTransaction()
                 ?.setReorderingAllowed(true)
                 ?.replace(R.id.ContenedorVistaFragments, TestFragment::class.java, null, "Test")
                 ?.addToBackStack("")
                 ?.commit()
+             */
         })
         return fragmento
     }

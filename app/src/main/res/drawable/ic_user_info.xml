@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ ApliKTest11
+  ~ Copyright (C) 2021 Miguel Molina
+  ~
+  ~ This program is free software: you can redistribute it and/or modify
+  ~ it under the terms of the GNU General Public License as published by
+  ~ the Free Software Foundation, either version 3 of the License, or
+  ~ (at your option) any later version.
+  ~
+  ~ This program is distributed in the hope that it will be useful,
+  ~ but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  ~ GNU General Public License for more details.
+  ~
+  ~ You should have received a copy of the GNU General Public License
+  ~ along with this program.  If not, see <https://www.gnu.org/licenses/>.
+  -->
+
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportHeight="300"
+    android:viewportWidth="300">
+    <path android:fillColor="#000000"
+        android:pathData="M36.75,25.7c-6.3,2.1 -12,7.2 -15.15,13.5l-2.6,5.2 0,82.15 0,82.2 -6.7,0.5c-10.8,0.9 -12.3,3.2 -12.3,19.2 0,23.85 9.05,38.85 27.35,45.25 7.95,2.8 237.35,2.8 245.3,-0 18.3,-6.4 27.35,-21.4 27.35,-45.25 0,-16 -1.5,-18.3 -12.3,-19.2l-6.7,-0.5 0,-82.2 0,-82.15 -2.6,-5.2c-3.25,-6.5 -9.35,-11.8 -15.8,-13.7 -7.75,-2.3 -218.9,-2.1 -225.85,0.2zM260.4,46.1l2.6,3.05 0,79.95 0,79.9 -13.75,-0 -13.75,-0 -1.9,-6.6c-5.45,-19.05 -19.3,-38 -35.6,-48.8 -6.75,-4.45 -10.3,-4.6 -15.75,-0.65 -20.15,14.6 -45.4,14.45 -65.2,-0.35 -12.55,-9.45 -43.85,21.85 -51.1,51.15l-1.35,5.25 -13.8,-0 -13.8,-0 0,-79.9 0,-79.95 2.6,-3.05 2.6,-3.1 107.8,-0 107.8,-0 2.6,3.1zM118.35,175c20.9,10.25 42.45,10.2 63.45,-0.1l8.3,-4.05 3.35,2.55c8.75,6.65 22.55,28.1 22.55,35 0,0.35 -29.7,0.6 -66,0.6 -36.3,-0 -66,-0.25 -66,-0.6 0,-5.7 10.35,-23 18.65,-31.15 7.55,-7.4 5.7,-7.15 15.7,-2.25zM281,234.25c-0.05,10.15 -4.75,17.65 -13.2,21.2 -6.25,2.6 -230.6,2.3 -236.3,-0.35 -8.15,-3.8 -12.5,-11.05 -12.5,-21.05l0,-6.05 131,-0 131,-0 0,6.25z" android:strokeColor="#00000000"/>
+    <path android:fillColor="#000000"
+        android:pathData="M139.5,68.4c-39.5,9.8 -45.75,64.3 -9.5,82.45 29.55,14.75 64,-6.35 64,-39.2 0,-29.05 -26.6,-50.15 -54.5,-43.25zM160,88.1c19.5,8.8 20.95,34 2.55,45.4 -14.05,8.65 -34.1,-0.3 -37.5,-16.8 -3.3,-15.8 8.8,-30.65 24.95,-30.65 3.4,-0 7.2,0.75 10,2.05z" android:strokeColor="#00000000"/>
+</vector>

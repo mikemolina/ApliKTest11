@@ -7,7 +7,7 @@ Una aplicación móvil desarrollada para dispositivos *Android*, dirigida a estu
 ## Desarrollo
 
 ### Dependencias
-* Aplicación desarrollada con el **IDE Android Studio (Arctic Fox)** basada en Gradle.
+* Aplicación desarrollada con el **IDE Android Studio (Arctic Fox)** basada en Kotlin+Gradle.
 * Nivel de API 26 (Android Oreo).
 
 ## Licencia
